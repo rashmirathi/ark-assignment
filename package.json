@@ -1,0 +1,47 @@
+{
+  "name": "ark_app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/react": "^11.1.1",
+    "@testing-library/user-event": "^12.2.0",
+    "autoprefixer": "^9.8.6",
+    "axios": "^0.21.0",
+    "chart.js": "^2.9.4",
+    "postcss-cli": "^8.2.0",
+    "react": "^17.0.1",
+    "react-chartkick": "^0.4.1",
+    "react-dom": "^17.0.1",
+    "react-loader-spinner": "^3.1.14",
+    "react-scripts": "4.0.0",
+    "tailwindcss": "^1.9.6",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "build:css": "postcss ./src/styles/tailwind.css -o ./src/styles/app.css",
+    "watch:css": "postcss ./src/styles/tailwind.css -o ./src/styles/app.css -watch",
+    "start": "npm run watch:css && react-scripts start",
+    "build": "npm run build:css && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
